@@ -32,7 +32,7 @@ RUN uv pip compile pyproject.toml --output-file=requirements.lock && \
 
 # 创建非 root 用户可写的缓存和本地目录
 RUN mkdir -p /app/.cache /app/.local && \
-    chown -R user:user /app
+    chown -R 777 /app
 
 # 设置环境变量
 ENV UV_CACHE_DIR=/app/.cache/uv
