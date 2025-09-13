@@ -38,6 +38,6 @@ USER user
 # 设置用户的 PATH
 ENV PATH="/app/.local/bin:${PATH}"
 # 暴露端口
-EXPOSE 8010
+EXPOSE 7860
 # 以 user 用户身份启动 launcher.py
 CMD ["python", "launcher.py"]
