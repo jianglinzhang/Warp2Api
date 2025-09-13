@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 创建非 root 用户，但暂时不切换过去
-RUN useradd -m -u 10014 user
+# RUN useradd -m -u 10014 user
 
 # 安装 uv (作为 root)
 RUN pip install uv
@@ -47,7 +47,7 @@ ENV OPENAI_ACCESS_LOG=true
 # ENV YOUR_ENV_VAR=YOUR_VALUE
 
 # 【重要】现在切换到非 root 用户来运行应用
-USER user
+# USER user
 
 # 设置用户的 PATH
 ENV PATH="/app/.local/bin:${PATH}"
@@ -55,7 +55,7 @@ ENV PATH="/app/.local/bin:${PATH}"
 # 暴露端口
 EXPOSE 8010
 
-# USER 10014
+USER 10014
 
 # 以 user 用户身份启动 launcher.py
 CMD ["python", "start.py"]
