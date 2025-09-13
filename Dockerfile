@@ -40,14 +40,10 @@ ENV UV_TOOL_DIR=/app/.local/uv/tools
 ENV UV_TOOL_BIN_DIR=/app/.local/uv/bin
 ENV PYTHONPATH=/app
 ENV WARP_LOG_LEVEL=info
-ENV WARP_ACCESS_LOG=true
+ENV WARP_ACCESS_LOG=false
 ENV OPENAI_LOG_LEVEL=info
-ENV OPENAI_ACCESS_LOG=true
-# 在这里添加您其他的环境变量
-# ENV YOUR_ENV_VAR=YOUR_VALUE
+ENV OPENAI_ACCESS_LOG=false
 
-# 【重要】现在切换到非 root 用户来运行应用
-# USER user
 
 # 设置用户的 PATH
 ENV PATH="/app/.local/bin:${PATH}"
