@@ -26,7 +26,8 @@ PORT = int(os.getenv("PORT", "8002"))
 WARP_JWT = os.getenv("WARP_JWT")
 
 # Client headers configuration
-CLIENT_VERSION = "v0.2025.08.06.08.12.stable_02"
+CLIENT_VERSION = "v0.2025.09.03.08.11.stable_03"
+# CLIENT_VERSION = "v0.2025.08.06.08.12.stable_02"
 OS_CATEGORY = "Windows"
 OS_NAME = "Windows"
 OS_VERSION = "11 (26100)"
