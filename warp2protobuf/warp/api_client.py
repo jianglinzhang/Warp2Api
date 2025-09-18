@@ -90,7 +90,7 @@ async def send_protobuf_to_warp_api(
                 headers = {
                     "accept": "text/event-stream",
                     "content-type": "application/x-protobuf", 
-                    "x-warp-client-version": "v0.2025.08.06.08.12.stable_02",
+                    "x-warp-client-version": "v0.2025.09.03.08.11.stable_03",
                     "x-warp-os-category": "Windows",
                     "x-warp-os-name": "Windows", 
                     "x-warp-os-version": "11 (26100)",
@@ -274,7 +274,7 @@ async def send_protobuf_to_warp_api_parsed(protobuf_bytes: bytes) -> tuple[str, 
                 headers = {
                     "accept": "text/event-stream",
                     "content-type": "application/x-protobuf", 
-                    "x-warp-client-version": "v0.2025.08.06.08.12.stable_02",
+                    "x-warp-client-version": "v0.2025.09.03.08.11.stable_03",
                     "x-warp-os-category": "Windows",
                     "x-warp-os-name": "Windows", 
                     "x-warp-os-version": "11 (26100)",
